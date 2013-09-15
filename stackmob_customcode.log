@@ -8910,3 +8910,1093 @@ java.lang.IllegalArgumentException: No enum const class com.stackmob.core.Method
 2013-09-09 12:37:41,690 DEBUG [qtp20684718-13 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
 2013-09-09 12:39:36,700 DEBUG [qtp20684718-11 Selector0] o.e.j.i.nio [SelectorManager.java:848] destroyEndPoint SCEP@23856861java.nio.channels.SocketChannel[closed][o=false d=false,io=1,w=true,rb=false,wb=false]
 2013-09-09 12:39:36,701 DEBUG [qtp20684718-11 Selector0] o.e.j.s.HttpConnection [HttpConnection.java:664] closed org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@e41d4a@127.0.0.1:8080<->127.0.0.1:54761
+2013-09-11 11:43:37,103 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 11:43:37,415 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@17dc1cb + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 11:43:37,417 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@17dc1cb + com.stackmob.customcode.dev.server.CustomCodeHandler@11410e5#STOPPED as handler
+2013-09-11 11:43:37,424 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session a1124467-7493-4bd8-85a1-d46331c07eae on localhost:8080
+2013-09-11 11:43:37,425 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@17dc1cb
+2013-09-11 11:43:37,426 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 11:43:37,456 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@17dc1cb + qtp22881581{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 11:43:37,457 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@11410e5#STOPPED
+2013-09-11 11:43:37,457 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@11410e5#STARTING
+2013-09-11 11:43:37,458 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@11410e5#STARTED
+2013-09-11 11:43:37,458 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@17dc1cb
+2013-09-11 11:43:37,458 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp22881581{8<=0<=0/254,-1}#STOPPED
+2013-09-11 11:43:37,462 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp22881581{8<=7<=8/254,0}#STARTED
+2013-09-11 11:43:37,462 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 11:43:37,474 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 11:43:37,474 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1ae9aaa#STOPPED
+2013-09-11 11:43:37,488 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1ae9aaa#STARTED
+2013-09-11 11:43:37,488 DEBUG [qtp22881581-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp22881581-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@78dc4c
+2013-09-11 11:43:37,489 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 11:43:37,489 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@17dc1cb
+2013-09-11 11:43:58,225 DEBUG [qtp22881581-12 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@873723@127.0.0.1:8080<->127.0.0.1:48516
+2013-09-11 11:43:59,745 WARN [qtp22881581-12 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:102] test_request threw Received Facebook error response of type OAuthException: Error validating access token: This may be because the user logged out or may be due to a system error.
+com.restfb.exception.FacebookOAuthException: Received Facebook error response of type OAuthException: Error validating access token: This may be because the user logged out or may be due to a system error.
+	at com.restfb.DefaultFacebookClient$DefaultGraphFacebookExceptionMapper.exceptionForTypeAndMessage(DefaultFacebookClient.java:766) ~[restfb-1.6.12.jar:na]
+	at com.restfb.DefaultFacebookClient.throwFacebookResponseStatusExceptionIfNecessary(DefaultFacebookClient.java:688) ~[restfb-1.6.12.jar:na]
+	at com.restfb.DefaultFacebookClient.makeRequestAndProcessResponse(DefaultFacebookClient.java:630) ~[restfb-1.6.12.jar:na]
+	at com.restfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:592) ~[restfb-1.6.12.jar:na]
+	at com.restfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:556) ~[restfb-1.6.12.jar:na]
+	at com.restfb.DefaultFacebookClient.fetchObject(DefaultFacebookClient.java:244) ~[restfb-1.6.12.jar:na]
+	at com.trivayh.server.TestRequest.execute(TestRequest.java:43) ~[classes/:na]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146) ~[na:1.6.0_27]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.6.0_27]
+	at java.lang.Thread.run(Thread.java:679) [na:1.6.0_27]
+2013-09-11 11:43:59,771 DEBUG [qtp22881581-12 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 11:44:34,483 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 11:44:34,556 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@126a29c + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 11:44:34,558 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@126a29c + com.stackmob.customcode.dev.server.CustomCodeHandler@13e15f7#STOPPED as handler
+2013-09-11 11:44:34,564 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 72647b7e-0260-4d98-88ca-7cf747aee236 on localhost:8080
+2013-09-11 11:44:34,566 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@126a29c
+2013-09-11 11:44:34,566 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 11:44:34,598 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@126a29c + qtp3093871{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 11:44:34,598 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@13e15f7#STOPPED
+2013-09-11 11:44:34,599 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@13e15f7#STARTING
+2013-09-11 11:44:34,599 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@13e15f7#STARTED
+2013-09-11 11:44:34,599 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@126a29c
+2013-09-11 11:44:34,600 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp3093871{8<=0<=0/254,-1}#STOPPED
+2013-09-11 11:44:34,604 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp3093871{8<=7<=8/254,0}#STARTED
+2013-09-11 11:44:34,605 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 11:44:34,620 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 11:44:34,621 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1ae9aaa#STOPPED
+2013-09-11 11:44:34,636 DEBUG [qtp3093871-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp3093871-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@c792d4
+2013-09-11 11:44:34,637 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1ae9aaa#STARTED
+2013-09-11 11:44:34,637 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 11:44:34,637 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@126a29c
+2013-09-11 11:44:46,210 DEBUG [qtp3093871-17 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1283052@127.0.0.1:8080<->127.0.0.1:48525
+2013-09-11 11:44:48,068 DEBUG [qtp3093871-17 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 12:07:09,962 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 12:07:10,026 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@115d06c + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 12:07:10,028 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@115d06c + com.stackmob.customcode.dev.server.CustomCodeHandler@17dc1cb#STOPPED as handler
+2013-09-11 12:07:10,034 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 3e0e7853-4e42-47af-85e0-35cf54e7599b on localhost:8080
+2013-09-11 12:07:10,036 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@115d06c
+2013-09-11 12:07:10,036 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 12:07:10,067 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@115d06c + qtp24145320{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 12:07:10,067 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17dc1cb#STOPPED
+2013-09-11 12:07:10,068 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17dc1cb#STARTING
+2013-09-11 12:07:10,068 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@17dc1cb#STARTED
+2013-09-11 12:07:10,068 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@115d06c
+2013-09-11 12:07:10,069 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp24145320{8<=0<=0/254,-1}#STOPPED
+2013-09-11 12:07:10,072 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp24145320{8<=7<=8/254,0}#STARTED
+2013-09-11 12:07:10,072 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 12:07:10,083 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 12:07:10,084 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@f864fe#STOPPED
+2013-09-11 12:07:10,097 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@f864fe#STARTED
+2013-09-11 12:07:10,097 DEBUG [qtp24145320-12 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp24145320-12 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@9abc69
+2013-09-11 12:07:10,098 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 12:07:10,099 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@115d06c
+2013-09-11 12:07:15,881 DEBUG [qtp24145320-16 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@18adae2@127.0.0.1:8080<->127.0.0.1:48860
+2013-09-11 12:07:19,066 WARN [qtp24145320-16 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:102] test_request threw null
+java.lang.NullPointerException: null
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2$$anonfun$apply$9$$anonfun$apply$10.apply(CustomCodeHandler.scala:75) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2$$anonfun$apply$9$$anonfun$apply$10.apply(CustomCodeHandler.scala:74) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.util.Try$.apply(Try.scala:161) ~[scala-library-2.10.1.jar:na]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2$$anonfun$apply$9.apply(CustomCodeHandler.scala:74) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2$$anonfun$apply$9.apply(CustomCodeHandler.scala:70) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library-2.10.1.jar:na]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2.apply(CustomCodeHandler.scala:70) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2.apply(CustomCodeHandler.scala:69) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library-2.10.1.jar:na]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2.apply(CustomCodeHandler.scala:69) [stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2.apply(CustomCodeHandler.scala:63) [stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.1.jar:na]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler.handle(CustomCodeHandler.scala:63) [stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110) [jetty-server-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.server.Server.handle(Server.java:345) [jetty-server-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:441) [jetty-server-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.server.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:919) [jetty-server-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:582) [jetty-http-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218) [jetty-http-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:51) [jetty-server-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:586) [jetty-io-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:44) [jetty-io-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598) [jetty-util-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533) [jetty-util-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at java.lang.Thread.run(Thread.java:679) [na:1.6.0_27]
+2013-09-11 12:07:19,079 DEBUG [qtp24145320-16 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 12:09:14,093 DEBUG [qtp24145320-12 Selector0] o.e.j.i.nio [SelectorManager.java:848] destroyEndPoint SCEP@15272259java.nio.channels.SocketChannel[closed][o=false d=false,io=1,w=true,rb=false,wb=false]
+2013-09-11 12:09:14,094 DEBUG [qtp24145320-12 Selector0] o.e.j.s.HttpConnection [HttpConnection.java:664] closed org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@18adae2@127.0.0.1:8080<->127.0.0.1:48860
+2013-09-11 12:09:23,382 DEBUG [qtp24145320-13 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@17d03c5@127.0.0.1:8080<->127.0.0.1:48875
+2013-09-11 12:09:23,385 WARN [qtp24145320-13 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:102] test_request threw null
+java.lang.NullPointerException: null
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2$$anonfun$apply$9$$anonfun$apply$10.apply(CustomCodeHandler.scala:75) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2$$anonfun$apply$9$$anonfun$apply$10.apply(CustomCodeHandler.scala:74) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.util.Try$.apply(Try.scala:161) ~[scala-library-2.10.1.jar:na]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2$$anonfun$apply$9.apply(CustomCodeHandler.scala:74) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2$$anonfun$apply$9.apply(CustomCodeHandler.scala:70) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library-2.10.1.jar:na]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2.apply(CustomCodeHandler.scala:70) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2.apply(CustomCodeHandler.scala:69) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library-2.10.1.jar:na]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2.apply(CustomCodeHandler.scala:69) [stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2.apply(CustomCodeHandler.scala:63) [stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.1.jar:na]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler.handle(CustomCodeHandler.scala:63) [stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110) [jetty-server-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.server.Server.handle(Server.java:345) [jetty-server-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:441) [jetty-server-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.server.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:919) [jetty-server-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:582) [jetty-http-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218) [jetty-http-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:51) [jetty-server-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:586) [jetty-io-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:44) [jetty-io-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598) [jetty-util-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533) [jetty-util-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at java.lang.Thread.run(Thread.java:679) [na:1.6.0_27]
+2013-09-11 12:09:23,387 DEBUG [qtp24145320-13 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 12:09:28,239 DEBUG [qtp24145320-16 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@17d03c5@127.0.0.1:8080<->127.0.0.1:48875
+2013-09-11 12:09:28,242 WARN [qtp24145320-16 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:102] test_request threw null
+java.lang.NullPointerException: null
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2$$anonfun$apply$9$$anonfun$apply$10.apply(CustomCodeHandler.scala:75) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2$$anonfun$apply$9$$anonfun$apply$10.apply(CustomCodeHandler.scala:74) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.util.Try$.apply(Try.scala:161) ~[scala-library-2.10.1.jar:na]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2$$anonfun$apply$9.apply(CustomCodeHandler.scala:74) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2$$anonfun$apply$9.apply(CustomCodeHandler.scala:70) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library-2.10.1.jar:na]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2.apply(CustomCodeHandler.scala:70) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2$$anonfun$2.apply(CustomCodeHandler.scala:69) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library-2.10.1.jar:na]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2.apply(CustomCodeHandler.scala:69) [stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler$$anonfun$handle$2.apply(CustomCodeHandler.scala:63) [stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.1.jar:na]
+	at com.stackmob.customcode.dev.server.CustomCodeHandler.handle(CustomCodeHandler.scala:63) [stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110) [jetty-server-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.server.Server.handle(Server.java:345) [jetty-server-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:441) [jetty-server-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.server.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:919) [jetty-server-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:582) [jetty-http-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218) [jetty-http-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:51) [jetty-server-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:586) [jetty-io-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:44) [jetty-io-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598) [jetty-util-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533) [jetty-util-7.5.4.v20111024.jar:7.5.4.v20111024]
+	at java.lang.Thread.run(Thread.java:679) [na:1.6.0_27]
+2013-09-11 12:09:28,243 DEBUG [qtp24145320-16 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 12:09:40,408 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 12:09:40,469 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@d1329 + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 12:09:40,471 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@d1329 + com.stackmob.customcode.dev.server.CustomCodeHandler@115d06c#STOPPED as handler
+2013-09-11 12:09:40,477 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session a9edc514-2744-455b-bc11-22da3456017d on localhost:8080
+2013-09-11 12:09:40,479 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@d1329
+2013-09-11 12:09:40,479 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 12:09:40,510 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@d1329 + qtp15310053{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 12:09:40,510 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@115d06c#STOPPED
+2013-09-11 12:09:40,511 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@115d06c#STARTING
+2013-09-11 12:09:40,511 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@115d06c#STARTED
+2013-09-11 12:09:40,512 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@d1329
+2013-09-11 12:09:40,512 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp15310053{8<=0<=0/254,-1}#STOPPED
+2013-09-11 12:09:40,516 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp15310053{8<=7<=8/254,0}#STARTED
+2013-09-11 12:09:40,516 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 12:09:40,527 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 12:09:40,528 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@10e434d#STOPPED
+2013-09-11 12:09:40,542 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@10e434d#STARTED
+2013-09-11 12:09:40,542 DEBUG [qtp15310053-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp15310053-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@e0e515
+2013-09-11 12:09:40,543 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 12:09:40,543 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@d1329
+2013-09-11 12:09:45,565 DEBUG [qtp15310053-14 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@b57e9a@127.0.0.1:8080<->127.0.0.1:48879
+2013-09-11 12:09:47,973 DEBUG [qtp15310053-14 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 12:10:55,263 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 12:10:55,342 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@115d06c + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 12:10:55,344 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@115d06c + com.stackmob.customcode.dev.server.CustomCodeHandler@17dc1cb#STOPPED as handler
+2013-09-11 12:10:55,351 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 74679c53-6c9d-495d-9f11-87b0c93e1dac on localhost:8080
+2013-09-11 12:10:55,352 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@115d06c
+2013-09-11 12:10:55,353 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 12:10:55,383 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@115d06c + qtp24145320{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 12:10:55,384 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17dc1cb#STOPPED
+2013-09-11 12:10:55,384 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17dc1cb#STARTING
+2013-09-11 12:10:55,385 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@17dc1cb#STARTED
+2013-09-11 12:10:55,385 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@115d06c
+2013-09-11 12:10:55,385 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp24145320{8<=0<=0/254,-1}#STOPPED
+2013-09-11 12:10:55,390 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp24145320{8<=7<=8/254,0}#STARTED
+2013-09-11 12:10:55,390 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 12:10:55,404 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 12:10:55,405 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@f864fe#STOPPED
+2013-09-11 12:10:55,426 DEBUG [qtp24145320-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp24145320-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@9abc69
+2013-09-11 12:10:55,428 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@f864fe#STARTED
+2013-09-11 12:10:55,428 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 12:10:55,428 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@115d06c
+2013-09-11 12:11:08,206 DEBUG [qtp24145320-15 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@18adae2@127.0.0.1:8080<->127.0.0.1:48891
+2013-09-11 12:11:08,645 DEBUG [qtp24145320-15 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 12:13:03,941 DEBUG [qtp24145320-11 Selector0] o.e.j.i.nio [SelectorManager.java:848] destroyEndPoint SCEP@15272259java.nio.channels.SocketChannel[closed][o=false d=false,io=1,w=true,rb=false,wb=false]
+2013-09-11 12:13:03,942 DEBUG [qtp24145320-11 Selector0] o.e.j.s.HttpConnection [HttpConnection.java:664] closed org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@18adae2@127.0.0.1:8080<->127.0.0.1:48891
+2013-09-11 13:39:37,170 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 13:39:37,225 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 13:39:37,227 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STOPPED as handler
+2013-09-11 13:39:37,233 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 43ea5dd2-ad85-4cfb-b3e5-605fc0021dd7 on localhost:8080
+2013-09-11 13:39:37,235 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@11410e5
+2013-09-11 13:39:37,235 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 13:39:37,270 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + qtp28453152{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 13:39:37,271 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STOPPED
+2013-09-11 13:39:37,271 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STARTING
+2013-09-11 13:39:37,272 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STARTED
+2013-09-11 13:39:37,272 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@11410e5
+2013-09-11 13:39:37,273 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp28453152{8<=0<=0/254,-1}#STOPPED
+2013-09-11 13:39:37,277 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp28453152{8<=7<=8/254,0}#STARTED
+2013-09-11 13:39:37,278 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 13:39:37,289 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 13:39:37,290 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1cda59b#STOPPED
+2013-09-11 13:39:37,304 DEBUG [qtp28453152-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp28453152-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@1a6a1a7
+2013-09-11 13:39:37,305 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1cda59b#STARTED
+2013-09-11 13:39:37,305 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 13:39:37,305 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@11410e5
+2013-09-11 13:40:16,655 DEBUG [qtp28453152-13 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@134eb84@127.0.0.1:8080<->127.0.0.1:50413
+2013-09-11 13:40:17,074 DEBUG [qtp28453152-13 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 13:41:27,825 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 13:41:27,879 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 13:41:27,880 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STOPPED as handler
+2013-09-11 13:41:27,887 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 3a05287e-d919-4c37-a6d3-75c5cd5eda20 on localhost:8080
+2013-09-11 13:41:27,888 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@11410e5
+2013-09-11 13:41:27,889 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 13:41:27,920 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + qtp28453152{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 13:41:27,920 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STOPPED
+2013-09-11 13:41:27,921 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STARTING
+2013-09-11 13:41:27,921 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STARTED
+2013-09-11 13:41:27,921 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@11410e5
+2013-09-11 13:41:27,922 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp28453152{8<=0<=0/254,-1}#STOPPED
+2013-09-11 13:41:27,925 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp28453152{8<=6<=8/254,0}#STARTED
+2013-09-11 13:41:27,926 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 13:41:27,937 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 13:41:27,938 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1cda59b#STOPPED
+2013-09-11 13:41:27,951 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1cda59b#STARTED
+2013-09-11 13:41:27,952 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 13:41:27,952 DEBUG [qtp28453152-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp28453152-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@1a6a1a7
+2013-09-11 13:41:27,952 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@11410e5
+2013-09-11 13:41:36,521 DEBUG [qtp28453152-15 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@134eb84@127.0.0.1:8080<->127.0.0.1:50433
+2013-09-11 13:41:37,042 DEBUG [qtp28453152-15 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 13:43:32,861 DEBUG [qtp28453152-11 Selector0] o.e.j.i.nio [SelectorManager.java:848] destroyEndPoint SCEP@17605128java.nio.channels.SocketChannel[closed][o=false d=true,io=1,w=true,rb=false,wb=false]
+2013-09-11 13:43:32,862 DEBUG [qtp28453152-11 Selector0] o.e.j.s.HttpConnection [HttpConnection.java:664] closed org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@134eb84@127.0.0.1:8080<->127.0.0.1:50433
+2013-09-11 13:44:16,225 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 13:44:16,280 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 13:44:16,282 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STOPPED as handler
+2013-09-11 13:44:16,288 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session a3402174-4f9f-4d47-b334-70af06194668 on localhost:8080
+2013-09-11 13:44:16,290 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@61373f
+2013-09-11 13:44:16,290 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 13:44:16,322 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + qtp27929635{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 13:44:16,322 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STOPPED
+2013-09-11 13:44:16,323 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STARTING
+2013-09-11 13:44:16,323 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STARTED
+2013-09-11 13:44:16,323 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@61373f
+2013-09-11 13:44:16,323 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp27929635{8<=0<=0/254,-1}#STOPPED
+2013-09-11 13:44:16,327 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp27929635{8<=7<=8/254,0}#STARTED
+2013-09-11 13:44:16,328 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 13:44:16,339 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 13:44:16,340 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@33788d#STOPPED
+2013-09-11 13:44:16,354 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@33788d#STARTED
+2013-09-11 13:44:16,354 DEBUG [qtp27929635-10 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp27929635-10 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@bef361
+2013-09-11 13:44:16,355 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 13:44:16,356 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@61373f
+2013-09-11 13:44:30,600 DEBUG [qtp27929635-16 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50449
+2013-09-11 13:44:32,936 DEBUG [qtp27929635-16 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 13:46:28,516 DEBUG [qtp27929635-10 Selector0] o.e.j.i.nio [SelectorManager.java:848] destroyEndPoint SCEP@6419763java.nio.channels.SocketChannel[closed][o=false d=false,io=1,w=true,rb=false,wb=false]
+2013-09-11 13:46:28,517 DEBUG [qtp27929635-10 Selector0] o.e.j.s.HttpConnection [HttpConnection.java:664] closed org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50449
+2013-09-11 13:50:26,533 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 13:50:26,591 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 13:50:26,592 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STOPPED as handler
+2013-09-11 13:50:26,599 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session c5a92603-d5fe-406d-b508-caa53b798ae3 on localhost:8080
+2013-09-11 13:50:26,600 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@11410e5
+2013-09-11 13:50:26,600 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 13:50:26,635 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + qtp28453152{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 13:50:26,636 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STOPPED
+2013-09-11 13:50:26,636 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STARTING
+2013-09-11 13:50:26,637 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STARTED
+2013-09-11 13:50:26,637 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@11410e5
+2013-09-11 13:50:26,638 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp28453152{8<=0<=0/254,-1}#STOPPED
+2013-09-11 13:50:26,643 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp28453152{8<=7<=8/254,0}#STARTED
+2013-09-11 13:50:26,643 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 13:50:26,657 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 13:50:26,658 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1cda59b#STOPPED
+2013-09-11 13:50:26,672 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1cda59b#STARTED
+2013-09-11 13:50:26,672 DEBUG [qtp28453152-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp28453152-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@1a6a1a7
+2013-09-11 13:50:26,673 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 13:50:26,673 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@11410e5
+2013-09-11 13:50:37,862 DEBUG [qtp28453152-16 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@134eb84@127.0.0.1:8080<->127.0.0.1:50548
+2013-09-11 13:50:40,253 DEBUG [qtp28453152-16 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 13:51:21,034 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 13:51:21,091 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@23756 + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 13:51:21,092 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@23756 + com.stackmob.customcode.dev.server.CustomCodeHandler@175ade6#STOPPED as handler
+2013-09-11 13:51:21,099 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 99e3c15f-c9b2-4138-99f9-cfb855f66589 on localhost:8080
+2013-09-11 13:51:21,100 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@23756
+2013-09-11 13:51:21,101 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 13:51:21,132 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@23756 + qtp6906832{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 13:51:21,132 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@175ade6#STOPPED
+2013-09-11 13:51:21,133 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@175ade6#STARTING
+2013-09-11 13:51:21,133 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@175ade6#STARTED
+2013-09-11 13:51:21,133 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@23756
+2013-09-11 13:51:21,134 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp6906832{8<=0<=0/254,-1}#STOPPED
+2013-09-11 13:51:21,138 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp6906832{8<=7<=8/254,0}#STARTED
+2013-09-11 13:51:21,138 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 13:51:21,149 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 13:51:21,150 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1f8bd0d#STOPPED
+2013-09-11 13:51:21,163 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1f8bd0d#STARTED
+2013-09-11 13:51:21,163 DEBUG [qtp6906832-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp6906832-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@13d9460
+2013-09-11 13:51:21,164 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 13:51:21,165 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@23756
+2013-09-11 13:51:27,147 DEBUG [qtp6906832-16 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@16ef705@127.0.0.1:8080<->127.0.0.1:50556
+2013-09-11 13:51:27,522 DEBUG [qtp6906832-16 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 13:51:53,725 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 13:51:53,794 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@1a01e8a + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 13:51:53,796 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@1a01e8a + com.stackmob.customcode.dev.server.CustomCodeHandler@1429cf1#STOPPED as handler
+2013-09-11 13:51:53,805 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 355dac49-d84f-4041-b4bf-6f90d99b1295 on localhost:8080
+2013-09-11 13:51:53,806 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@1a01e8a
+2013-09-11 13:51:53,807 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 13:51:53,841 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@1a01e8a + qtp12744885{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 13:51:53,842 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@1429cf1#STOPPED
+2013-09-11 13:51:53,842 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@1429cf1#STARTING
+2013-09-11 13:51:53,843 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@1429cf1#STARTED
+2013-09-11 13:51:53,843 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@1a01e8a
+2013-09-11 13:51:53,843 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp12744885{8<=0<=0/254,-1}#STOPPED
+2013-09-11 13:51:53,849 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp12744885{8<=6<=8/254,0}#STARTED
+2013-09-11 13:51:53,850 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 13:51:53,881 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 13:51:53,881 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@9e4585#STOPPED
+2013-09-11 13:51:53,901 DEBUG [qtp12744885-13 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp12744885-13 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@9e0c2d
+2013-09-11 13:51:53,903 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@9e4585#STARTED
+2013-09-11 13:51:53,903 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 13:51:53,904 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@1a01e8a
+2013-09-11 13:52:01,923 DEBUG [qtp12744885-14 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@15b6aad@127.0.0.1:8080<->127.0.0.1:50563
+2013-09-11 13:52:34,197 WARN [qtp12744885-14 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:97] test_request took over 25 seconds to execute
+2013-09-11 13:52:34,242 DEBUG [qtp12744885-14 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 13:54:24,691 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 13:54:24,746 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 13:54:24,747 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STOPPED as handler
+2013-09-11 13:54:24,754 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 6846a40a-098e-41a7-b475-84b028e72a5c on localhost:8080
+2013-09-11 13:54:24,756 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@7244ca
+2013-09-11 13:54:24,756 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 13:54:24,787 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + qtp20436132{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 13:54:24,788 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STOPPED
+2013-09-11 13:54:24,788 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STARTING
+2013-09-11 13:54:24,788 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STARTED
+2013-09-11 13:54:24,789 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@7244ca
+2013-09-11 13:54:24,789 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp20436132{8<=0<=0/254,-1}#STOPPED
+2013-09-11 13:54:24,793 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp20436132{8<=7<=8/254,0}#STARTED
+2013-09-11 13:54:24,793 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 13:54:24,804 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 13:54:24,804 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@12fb0af#STOPPED
+2013-09-11 13:54:24,818 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@12fb0af#STARTED
+2013-09-11 13:54:24,818 DEBUG [qtp20436132-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp20436132-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@5c98f3
+2013-09-11 13:54:24,819 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 13:54:24,819 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@7244ca
+2013-09-11 13:54:31,624 DEBUG [qtp20436132-17 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@16ef705@127.0.0.1:8080<->127.0.0.1:50583
+2013-09-11 13:54:32,007 DEBUG [qtp20436132-17 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 13:56:27,615 DEBUG [qtp20436132-11 Selector0] o.e.j.i.nio [SelectorManager.java:848] destroyEndPoint SCEP@19473142java.nio.channels.SocketChannel[closed][o=false d=false,io=1,w=true,rb=false,wb=false]
+2013-09-11 13:56:27,615 DEBUG [qtp20436132-11 Selector0] o.e.j.s.HttpConnection [HttpConnection.java:664] closed org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@16ef705@127.0.0.1:8080<->127.0.0.1:50583
+2013-09-11 13:59:42,846 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 13:59:42,901 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 13:59:42,902 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STOPPED as handler
+2013-09-11 13:59:42,909 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 00adae5d-c002-45b6-9235-34c8559e7384 on localhost:8080
+2013-09-11 13:59:42,911 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@11410e5
+2013-09-11 13:59:42,911 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 13:59:42,942 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + qtp28453152{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 13:59:42,943 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STOPPED
+2013-09-11 13:59:42,943 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STARTING
+2013-09-11 13:59:42,944 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STARTED
+2013-09-11 13:59:42,944 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@11410e5
+2013-09-11 13:59:42,953 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp28453152{8<=0<=0/254,-1}#STOPPED
+2013-09-11 13:59:42,962 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp28453152{8<=7<=8/254,0}#STARTED
+2013-09-11 13:59:42,962 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 13:59:42,977 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 13:59:42,978 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1cda59b#STOPPED
+2013-09-11 13:59:42,994 DEBUG [qtp28453152-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp28453152-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@1a6a1a7
+2013-09-11 13:59:43,000 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1cda59b#STARTED
+2013-09-11 13:59:43,001 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 13:59:43,001 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@11410e5
+2013-09-11 13:59:53,285 DEBUG [qtp28453152-16 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50770
+2013-09-11 13:59:55,402 DEBUG [qtp28453152-16 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:00:34,298 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:00:34,353 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@23756 + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:00:34,354 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@23756 + com.stackmob.customcode.dev.server.CustomCodeHandler@175ade6#STOPPED as handler
+2013-09-11 14:00:34,362 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 2f867442-3a81-484b-8564-2205af2e2721 on localhost:8080
+2013-09-11 14:00:34,363 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@23756
+2013-09-11 14:00:34,364 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:00:34,396 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@23756 + qtp6906832{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:00:34,396 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@175ade6#STOPPED
+2013-09-11 14:00:34,396 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@175ade6#STARTING
+2013-09-11 14:00:34,397 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@175ade6#STARTED
+2013-09-11 14:00:34,397 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@23756
+2013-09-11 14:00:34,397 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp6906832{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:00:34,401 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp6906832{8<=7<=8/254,0}#STARTED
+2013-09-11 14:00:34,401 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:00:34,413 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:00:34,414 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1f8bd0d#STOPPED
+2013-09-11 14:00:34,428 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1f8bd0d#STARTED
+2013-09-11 14:00:34,428 DEBUG [qtp6906832-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp6906832-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@13d9460
+2013-09-11 14:00:34,429 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:00:34,430 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@23756
+2013-09-11 14:00:42,931 DEBUG [qtp6906832-13 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@16ef705@127.0.0.1:8080<->127.0.0.1:50800
+2013-09-11 14:00:43,313 DEBUG [qtp6906832-13 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:03:20,966 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:03:21,023 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:03:21,025 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STOPPED as handler
+2013-09-11 14:03:21,032 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 67de2e09-44bf-4293-b661-887c0de6c183 on localhost:8080
+2013-09-11 14:03:21,033 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:03:21,033 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:03:21,067 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + qtp20436132{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:03:21,068 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STOPPED
+2013-09-11 14:03:21,068 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STARTING
+2013-09-11 14:03:21,069 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STARTED
+2013-09-11 14:03:21,069 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:03:21,069 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp20436132{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:03:21,074 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp20436132{8<=7<=8/254,0}#STARTED
+2013-09-11 14:03:21,074 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:03:21,086 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:03:21,086 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@12fb0af#STOPPED
+2013-09-11 14:03:21,100 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@12fb0af#STARTED
+2013-09-11 14:03:21,100 DEBUG [qtp20436132-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp20436132-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@5c98f3
+2013-09-11 14:03:21,101 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:03:21,101 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:03:37,166 DEBUG [qtp20436132-13 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1b7c76@127.0.0.1:8080<->127.0.0.1:50825
+2013-09-11 14:03:39,537 DEBUG [qtp20436132-13 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:05:23,405 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:05:23,587 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:05:23,589 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STOPPED as handler
+2013-09-11 14:05:23,599 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 9abc9fa7-33f1-4606-8ed6-f3066a80a72f on localhost:8080
+2013-09-11 14:05:23,600 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@11410e5
+2013-09-11 14:05:23,601 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:05:23,644 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + qtp28453152{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:05:23,645 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STOPPED
+2013-09-11 14:05:23,645 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STARTING
+2013-09-11 14:05:23,645 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STARTED
+2013-09-11 14:05:23,646 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@11410e5
+2013-09-11 14:05:23,646 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp28453152{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:05:23,649 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp28453152{8<=7<=8/254,0}#STARTED
+2013-09-11 14:05:23,650 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:05:23,662 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:05:23,663 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1cda59b#STOPPED
+2013-09-11 14:05:23,678 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1cda59b#STARTED
+2013-09-11 14:05:23,678 DEBUG [qtp28453152-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp28453152-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@1a6a1a7
+2013-09-11 14:05:23,679 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:05:23,680 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@11410e5
+2013-09-11 14:05:35,434 DEBUG [qtp28453152-17 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50848
+2013-09-11 14:05:37,832 DEBUG [qtp28453152-17 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:07:14,321 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:07:14,377 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:07:14,378 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STOPPED as handler
+2013-09-11 14:07:14,386 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session f862994e-eb9c-4f2d-bc8e-f50476c2a32d on localhost:8080
+2013-09-11 14:07:14,388 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@11410e5
+2013-09-11 14:07:14,388 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:07:14,421 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@11410e5 + qtp28453152{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:07:14,422 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STOPPED
+2013-09-11 14:07:14,422 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STARTING
+2013-09-11 14:07:14,422 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@7244ca#STARTED
+2013-09-11 14:07:14,423 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@11410e5
+2013-09-11 14:07:14,423 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp28453152{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:07:14,428 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp28453152{8<=7<=8/254,0}#STARTED
+2013-09-11 14:07:14,428 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:07:14,440 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:07:14,440 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1cda59b#STOPPED
+2013-09-11 14:07:14,454 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1cda59b#STARTED
+2013-09-11 14:07:14,455 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:07:14,454 DEBUG [qtp28453152-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp28453152-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@1a6a1a7
+2013-09-11 14:07:14,455 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@11410e5
+2013-09-11 14:07:21,310 DEBUG [qtp28453152-16 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@134eb84@127.0.0.1:8080<->127.0.0.1:50871
+2013-09-11 14:07:21,743 DEBUG [qtp28453152-16 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:09:16,792 DEBUG [qtp28453152-11 Selector0] o.e.j.i.nio [SelectorManager.java:848] destroyEndPoint SCEP@17605128java.nio.channels.SocketChannel[closed][o=false d=false,io=1,w=true,rb=false,wb=false]
+2013-09-11 14:09:16,792 DEBUG [qtp28453152-11 Selector0] o.e.j.s.HttpConnection [HttpConnection.java:664] closed org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@134eb84@127.0.0.1:8080<->127.0.0.1:50871
+2013-09-11 14:09:42,870 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:09:42,924 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:09:42,925 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STOPPED as handler
+2013-09-11 14:09:42,932 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 424c22cb-a423-4877-9c32-90d7b85216d1 on localhost:8080
+2013-09-11 14:09:42,933 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:09:42,934 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:09:42,965 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + qtp27929635{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:09:42,966 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STOPPED
+2013-09-11 14:09:42,966 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STARTING
+2013-09-11 14:09:42,967 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STARTED
+2013-09-11 14:09:42,967 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:09:42,967 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp27929635{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:09:42,971 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp27929635{8<=7<=8/254,0}#STARTED
+2013-09-11 14:09:42,971 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:09:42,982 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:09:42,983 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@33788d#STOPPED
+2013-09-11 14:09:42,997 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@33788d#STARTED
+2013-09-11 14:09:42,997 DEBUG [qtp27929635-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp27929635-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@bef361
+2013-09-11 14:09:42,998 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:09:42,998 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:09:50,996 DEBUG [qtp27929635-12 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50890
+2013-09-11 14:09:53,514 DEBUG [qtp27929635-12 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:10:42,071 DEBUG [qtp27929635-12 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50890
+2013-09-11 14:10:42,073 DEBUG [qtp27929635-12 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:10:50,195 DEBUG [qtp27929635-13 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50890
+2013-09-11 14:10:50,198 DEBUG [qtp27929635-13 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:10:55,207 DEBUG [qtp27929635-16 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50890
+2013-09-11 14:10:55,209 DEBUG [qtp27929635-16 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:10:55,631 DEBUG [qtp27929635-13 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50890
+2013-09-11 14:10:55,633 DEBUG [qtp27929635-13 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:10:55,698 DEBUG [qtp27929635-14 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50890
+2013-09-11 14:10:55,700 DEBUG [qtp27929635-14 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:10:58,593 DEBUG [qtp27929635-14 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50890
+2013-09-11 14:10:58,844 DEBUG [qtp27929635-14 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:11:23,851 DEBUG [qtp27929635-12 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50890
+2013-09-11 14:11:24,214 DEBUG [qtp27929635-12 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:12:28,499 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:12:28,553 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@13e15f7 + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:12:28,554 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@13e15f7 + com.stackmob.customcode.dev.server.CustomCodeHandler@61373f#STOPPED as handler
+2013-09-11 14:12:28,562 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 634a6765-3a0e-44b0-b4dc-487b50dcf0c5 on localhost:8080
+2013-09-11 14:12:28,563 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@13e15f7
+2013-09-11 14:12:28,564 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:12:28,598 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@13e15f7 + qtp3387681{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:12:28,598 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@61373f#STOPPED
+2013-09-11 14:12:28,599 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@61373f#STARTING
+2013-09-11 14:12:28,599 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@61373f#STARTED
+2013-09-11 14:12:28,599 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@13e15f7
+2013-09-11 14:12:28,599 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp3387681{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:12:28,604 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp3387681{8<=7<=8/254,0}#STARTED
+2013-09-11 14:12:28,604 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:12:28,615 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:12:28,616 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@d9896e#STOPPED
+2013-09-11 14:12:28,630 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@d9896e#STARTED
+2013-09-11 14:12:28,630 DEBUG [qtp3387681-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp3387681-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@c70b0d
+2013-09-11 14:12:28,631 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:12:28,631 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@13e15f7
+2013-09-11 14:12:59,534 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:12:59,598 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:12:59,599 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STOPPED as handler
+2013-09-11 14:12:59,606 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 83d0c346-457d-41b8-ba16-52148dc0c675 on localhost:8080
+2013-09-11 14:12:59,607 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:12:59,608 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:12:59,639 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + qtp20436132{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:12:59,640 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STOPPED
+2013-09-11 14:12:59,640 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STARTING
+2013-09-11 14:12:59,640 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STARTED
+2013-09-11 14:12:59,640 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:12:59,641 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp20436132{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:12:59,644 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp20436132{8<=7<=8/254,0}#STARTED
+2013-09-11 14:12:59,645 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:12:59,655 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:12:59,656 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@12fb0af#STOPPED
+2013-09-11 14:12:59,670 DEBUG [qtp20436132-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp20436132-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@5c98f3
+2013-09-11 14:12:59,671 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@12fb0af#STARTED
+2013-09-11 14:12:59,671 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:12:59,671 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:13:17,474 DEBUG [qtp20436132-13 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:50912
+2013-09-11 14:13:20,070 DEBUG [qtp20436132-13 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:13:28,276 DEBUG [qtp20436132-13 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:50912
+2013-09-11 14:13:28,524 DEBUG [qtp20436132-13 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:15:24,085 DEBUG [qtp20436132-11 Selector0] o.e.j.i.nio [SelectorManager.java:848] destroyEndPoint SCEP@19473142java.nio.channels.SocketChannel[closed][o=false d=false,io=1,w=true,rb=false,wb=false]
+2013-09-11 14:15:24,086 DEBUG [qtp20436132-11 Selector0] o.e.j.s.HttpConnection [HttpConnection.java:664] closed org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:50912
+2013-09-11 14:18:44,584 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:18:44,639 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:18:44,640 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STOPPED as handler
+2013-09-11 14:18:44,647 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session ef50d4fc-c20a-48b0-8e92-58d81c95bd09 on localhost:8080
+2013-09-11 14:18:44,649 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:18:44,649 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:18:44,680 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + qtp27929635{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:18:44,680 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STOPPED
+2013-09-11 14:18:44,681 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STARTING
+2013-09-11 14:18:44,681 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STARTED
+2013-09-11 14:18:44,681 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:18:44,681 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp27929635{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:18:44,685 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp27929635{8<=7<=8/254,0}#STARTED
+2013-09-11 14:18:44,686 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:18:44,697 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:18:44,697 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@33788d#STOPPED
+2013-09-11 14:18:44,711 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@33788d#STARTED
+2013-09-11 14:18:44,711 DEBUG [qtp27929635-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp27929635-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@bef361
+2013-09-11 14:18:44,711 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:18:44,712 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:19:04,834 DEBUG [qtp27929635-16 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50956
+2013-09-11 14:19:07,280 DEBUG [qtp27929635-16 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:20:00,880 DEBUG [qtp27929635-14 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50956
+2013-09-11 14:20:00,883 DEBUG [qtp27929635-14 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:20:02,501 DEBUG [qtp27929635-13 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50956
+2013-09-11 14:20:02,503 DEBUG [qtp27929635-13 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:20:33,263 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:20:33,320 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:20:33,321 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STOPPED as handler
+2013-09-11 14:20:33,328 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session a7d2bd94-8c40-4b41-8766-695cdbbf0301 on localhost:8080
+2013-09-11 14:20:33,329 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:20:33,330 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:20:33,362 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + qtp27929635{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:20:33,362 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STOPPED
+2013-09-11 14:20:33,363 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STARTING
+2013-09-11 14:20:33,363 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STARTED
+2013-09-11 14:20:33,363 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:20:33,364 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp27929635{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:20:33,367 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp27929635{8<=6<=8/254,0}#STARTED
+2013-09-11 14:20:33,368 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:20:33,379 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:20:33,380 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@33788d#STOPPED
+2013-09-11 14:20:33,394 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@33788d#STARTED
+2013-09-11 14:20:33,394 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:20:33,394 DEBUG [qtp27929635-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp27929635-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@bef361
+2013-09-11 14:20:33,394 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:20:47,760 DEBUG [qtp27929635-15 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50970
+2013-09-11 14:20:50,275 DEBUG [qtp27929635-15 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:20:57,127 DEBUG [qtp27929635-13 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50970
+2013-09-11 14:20:57,130 DEBUG [qtp27929635-13 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:21:12,648 DEBUG [qtp27929635-13 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50970
+2013-09-11 14:21:12,650 DEBUG [qtp27929635-13 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:21:26,156 DEBUG [qtp27929635-17 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50970
+2013-09-11 14:21:26,158 DEBUG [qtp27929635-17 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:21:27,428 DEBUG [qtp27929635-15 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50970
+2013-09-11 14:21:27,429 DEBUG [qtp27929635-15 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:21:39,660 DEBUG [qtp27929635-14 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50970
+2013-09-11 14:21:39,662 DEBUG [qtp27929635-14 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:21:50,613 DEBUG [qtp27929635-14 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:50970
+2013-09-11 14:21:50,851 DEBUG [qtp27929635-14 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:24:08,632 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:24:08,698 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:24:08,700 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STOPPED as handler
+2013-09-11 14:24:08,709 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session afb9c05f-0381-4f21-88e6-8a868091a865 on localhost:8080
+2013-09-11 14:24:08,710 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:24:08,711 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:24:08,750 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + qtp27929635{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:24:08,750 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STOPPED
+2013-09-11 14:24:08,751 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STARTING
+2013-09-11 14:24:08,751 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STARTED
+2013-09-11 14:24:08,752 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:24:08,752 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp27929635{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:24:08,757 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp27929635{8<=7<=8/254,0}#STARTED
+2013-09-11 14:24:08,758 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:24:08,772 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:24:08,773 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@33788d#STOPPED
+2013-09-11 14:24:08,790 DEBUG [qtp27929635-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp27929635-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@bef361
+2013-09-11 14:24:08,791 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@33788d#STARTED
+2013-09-11 14:24:08,792 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:24:08,792 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:24:39,259 DEBUG [qtp27929635-14 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:51002
+2013-09-11 14:24:41,760 DEBUG [qtp27929635-14 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:26:14,800 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:26:14,855 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@13e15f7 + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:26:14,857 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@13e15f7 + com.stackmob.customcode.dev.server.CustomCodeHandler@61373f#STOPPED as handler
+2013-09-11 14:26:14,865 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 5cdecdac-b81e-4502-9420-061d158cca6e on localhost:8080
+2013-09-11 14:26:14,866 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@13e15f7
+2013-09-11 14:26:14,867 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:26:14,898 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@13e15f7 + qtp3387681{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:26:14,899 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@61373f#STOPPED
+2013-09-11 14:26:14,899 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@61373f#STARTING
+2013-09-11 14:26:14,899 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@61373f#STARTED
+2013-09-11 14:26:14,900 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@13e15f7
+2013-09-11 14:26:14,900 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp3387681{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:26:14,904 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp3387681{8<=7<=8/254,0}#STARTED
+2013-09-11 14:26:14,905 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:26:14,915 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:26:14,916 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@d9896e#STOPPED
+2013-09-11 14:26:14,930 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@d9896e#STARTED
+2013-09-11 14:26:14,930 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:26:14,930 DEBUG [qtp3387681-10 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp3387681-10 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@c70b0d
+2013-09-11 14:26:14,931 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@13e15f7
+2013-09-11 14:26:21,760 DEBUG [qtp3387681-17 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@873723@127.0.0.1:8080<->127.0.0.1:51013
+2013-09-11 14:26:22,158 DEBUG [qtp3387681-17 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:27:38,247 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:27:38,303 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:27:38,305 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STOPPED as handler
+2013-09-11 14:27:38,311 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 89407411-e98f-4845-bf7f-ecde24ced6c4 on localhost:8080
+2013-09-11 14:27:38,313 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:27:38,313 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:27:38,345 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + qtp20436132{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:27:38,345 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STOPPED
+2013-09-11 14:27:38,346 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STARTING
+2013-09-11 14:27:38,348 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STARTED
+2013-09-11 14:27:38,351 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:27:38,351 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp20436132{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:27:38,355 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp20436132{8<=7<=8/254,0}#STARTED
+2013-09-11 14:27:38,355 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:27:38,367 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:27:38,367 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@12fb0af#STOPPED
+2013-09-11 14:27:38,381 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@12fb0af#STARTED
+2013-09-11 14:27:38,382 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:27:38,382 DEBUG [qtp20436132-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp20436132-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@5c98f3
+2013-09-11 14:27:38,382 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:27:44,624 DEBUG [qtp20436132-16 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:51022
+2013-09-11 14:27:47,022 DEBUG [qtp20436132-16 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:28:28,834 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:28:28,891 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@23756 + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:28:28,893 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@23756 + com.stackmob.customcode.dev.server.CustomCodeHandler@175ade6#STOPPED as handler
+2013-09-11 14:28:28,900 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session d907e638-ec79-4d98-88c8-3f463f052161 on localhost:8080
+2013-09-11 14:28:28,902 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@23756
+2013-09-11 14:28:28,903 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:28:28,935 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@23756 + qtp6906832{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:28:28,936 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@175ade6#STOPPED
+2013-09-11 14:28:28,936 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@175ade6#STARTING
+2013-09-11 14:28:28,936 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@175ade6#STARTED
+2013-09-11 14:28:28,936 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@23756
+2013-09-11 14:28:28,937 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp6906832{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:28:28,941 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp6906832{8<=7<=8/254,0}#STARTED
+2013-09-11 14:28:28,941 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:28:28,955 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:28:28,956 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1f8bd0d#STOPPED
+2013-09-11 14:28:28,971 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@1f8bd0d#STARTED
+2013-09-11 14:28:28,971 DEBUG [qtp6906832-12 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp6906832-12 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@13d9460
+2013-09-11 14:28:28,972 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:28:28,973 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@23756
+2013-09-11 14:28:33,583 DEBUG [qtp6906832-14 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@16ef705@127.0.0.1:8080<->127.0.0.1:51032
+2013-09-11 14:28:34,059 DEBUG [qtp6906832-14 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:29:32,699 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:29:32,755 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:29:32,757 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STOPPED as handler
+2013-09-11 14:29:32,763 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 6ba3d8df-c3e1-4976-8653-9cf5570a725a on localhost:8080
+2013-09-11 14:29:32,765 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:29:32,765 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:29:32,796 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + qtp20436132{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:29:32,797 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STOPPED
+2013-09-11 14:29:32,797 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STARTING
+2013-09-11 14:29:32,797 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STARTED
+2013-09-11 14:29:32,797 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:29:32,798 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp20436132{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:29:32,801 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp20436132{8<=7<=8/254,0}#STARTED
+2013-09-11 14:29:32,802 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:29:32,815 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:29:32,815 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@12fb0af#STOPPED
+2013-09-11 14:29:32,829 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@12fb0af#STARTED
+2013-09-11 14:29:32,829 DEBUG [qtp20436132-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp20436132-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@5c98f3
+2013-09-11 14:29:32,830 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:29:32,831 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:29:39,835 DEBUG [qtp20436132-17 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@16ef705@127.0.0.1:8080<->127.0.0.1:51052
+2013-09-11 14:29:42,322 DEBUG [qtp20436132-17 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:30:29,295 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:30:29,364 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@1353154 + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:30:29,366 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@1353154 + com.stackmob.customcode.dev.server.CustomCodeHandler@4d93e3#STOPPED as handler
+2013-09-11 14:30:29,374 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 263c27ba-d2ce-4fbf-89fc-2e9ae6dce104 on localhost:8080
+2013-09-11 14:30:29,376 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@1353154
+2013-09-11 14:30:29,376 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:30:29,414 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@1353154 + qtp25346777{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:30:29,415 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@4d93e3#STOPPED
+2013-09-11 14:30:29,415 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@4d93e3#STARTING
+2013-09-11 14:30:29,415 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@4d93e3#STARTED
+2013-09-11 14:30:29,415 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@1353154
+2013-09-11 14:30:29,416 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp25346777{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:30:29,421 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp25346777{8<=7<=8/254,0}#STARTED
+2013-09-11 14:30:29,421 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:30:29,440 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:30:29,440 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@9e4585#STOPPED
+2013-09-11 14:30:29,458 DEBUG [qtp25346777-13 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp25346777-13 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@318293
+2013-09-11 14:30:29,458 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@9e4585#STARTED
+2013-09-11 14:30:29,459 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:30:29,459 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@1353154
+2013-09-11 14:30:35,618 DEBUG [qtp25346777-18 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@b890dc@127.0.0.1:8080<->127.0.0.1:51068
+2013-09-11 14:32:10,854 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:32:10,909 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:32:10,910 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STOPPED as handler
+2013-09-11 14:32:10,917 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 8972c4ae-8692-4a99-8560-c90d2151d123 on localhost:8080
+2013-09-11 14:32:10,918 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:32:10,919 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:32:10,952 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + qtp20436132{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:32:10,952 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STOPPED
+2013-09-11 14:32:10,953 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STARTING
+2013-09-11 14:32:10,953 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STARTED
+2013-09-11 14:32:10,953 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:32:10,953 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp20436132{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:32:10,957 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp20436132{8<=7<=8/254,0}#STARTED
+2013-09-11 14:32:10,957 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:32:10,971 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:32:10,971 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@12fb0af#STOPPED
+2013-09-11 14:32:10,987 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@12fb0af#STARTED
+2013-09-11 14:32:10,987 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:32:10,987 DEBUG [qtp20436132-10 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp20436132-10 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@5c98f3
+2013-09-11 14:32:10,988 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:32:17,967 DEBUG [qtp20436132-17 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:51078
+2013-09-11 14:32:20,578 DEBUG [qtp20436132-17 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:32:33,815 DEBUG [qtp20436132-14 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:51078
+2013-09-11 14:32:33,817 DEBUG [qtp20436132-14 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:32:44,024 DEBUG [qtp20436132-13 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:51078
+2013-09-11 14:32:44,026 DEBUG [qtp20436132-13 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:32:58,148 DEBUG [qtp20436132-17 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:51078
+2013-09-11 14:32:58,149 DEBUG [qtp20436132-17 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:33:07,801 DEBUG [qtp20436132-14 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:51078
+2013-09-11 14:33:07,804 DEBUG [qtp20436132-14 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:33:22,848 DEBUG [qtp20436132-14 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:51078
+2013-09-11 14:33:22,850 DEBUG [qtp20436132-14 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:33:43,506 DEBUG [qtp20436132-14 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:51078
+2013-09-11 14:33:43,766 DEBUG [qtp20436132-14 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:35:29,869 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:35:29,925 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:35:29,926 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STOPPED as handler
+2013-09-11 14:35:29,933 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 0b70c28b-1f62-45b6-99de-7c3817c2f939 on localhost:8080
+2013-09-11 14:35:29,935 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:35:29,935 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:35:29,967 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + qtp27929635{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:35:29,967 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STOPPED
+2013-09-11 14:35:29,968 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STARTING
+2013-09-11 14:35:29,968 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STARTED
+2013-09-11 14:35:29,968 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:35:29,969 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp27929635{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:35:29,973 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp27929635{8<=7<=8/254,0}#STARTED
+2013-09-11 14:35:29,973 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:35:29,985 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:35:29,985 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@33788d#STOPPED
+2013-09-11 14:35:29,999 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@33788d#STARTED
+2013-09-11 14:35:29,999 DEBUG [qtp27929635-12 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp27929635-12 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@bef361
+2013-09-11 14:35:30,000 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:35:30,001 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:35:36,101 DEBUG [qtp27929635-10 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:51124
+2013-09-11 14:35:38,438 WARN [qtp27929635-10 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:102] test_request threw A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+com.modifiedrestfb.exception.FacebookNetworkException: A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequestAndProcessResponse(DefaultFacebookClient.java:741) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:708) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:673) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.fetchObject(DefaultFacebookClient.java:257) ~[classes/:na]
+	at com.trivayh.facebook.FacebookUtil.getFacebookMeRest(FacebookUtil.java:31) ~[classes/:na]
+	at com.trivayh.server.TestRequest.execute(TestRequest.java:44) ~[classes/:na]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146) ~[na:1.6.0_27]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.6.0_27]
+	at java.lang.Thread.run(Thread.java:679) [na:1.6.0_27]
+2013-09-11 14:35:38,451 DEBUG [qtp27929635-10 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:36:03,959 DEBUG [qtp27929635-15 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:51124
+2013-09-11 14:36:04,404 DEBUG [qtp27929635-15 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:37:02,513 DEBUG [qtp27929635-10 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:51124
+2013-09-11 14:37:02,780 DEBUG [qtp27929635-10 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:38:31,307 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:38:31,363 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:38:31,364 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STOPPED as handler
+2013-09-11 14:38:31,372 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session df9d42e7-d9eb-476e-ae1e-65d0dc212c92 on localhost:8080
+2013-09-11 14:38:31,373 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:38:31,373 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:38:31,406 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@7244ca + qtp20436132{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:38:31,406 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STOPPED
+2013-09-11 14:38:31,406 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STARTING
+2013-09-11 14:38:31,407 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@17f11fb#STARTED
+2013-09-11 14:38:31,407 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:38:31,408 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp20436132{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:38:31,411 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp20436132{8<=7<=8/254,0}#STARTED
+2013-09-11 14:38:31,412 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:38:31,424 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:38:31,426 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@12fb0af#STOPPED
+2013-09-11 14:38:31,441 DEBUG [qtp20436132-12 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp20436132-12 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@5c98f3
+2013-09-11 14:38:31,442 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@12fb0af#STARTED
+2013-09-11 14:38:31,443 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:38:31,443 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@7244ca
+2013-09-11 14:38:35,926 DEBUG [qtp20436132-14 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:51141
+2013-09-11 14:38:36,249 WARN [qtp20436132-14 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:102] test_request threw A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+com.modifiedrestfb.exception.FacebookNetworkException: A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequestAndProcessResponse(DefaultFacebookClient.java:741) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:708) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:673) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.fetchObject(DefaultFacebookClient.java:257) ~[classes/:na]
+	at com.trivayh.facebook.FacebookUtil.getFacebookMeRest(FacebookUtil.java:31) ~[classes/:na]
+	at com.trivayh.server.TestRequest.execute(TestRequest.java:41) ~[classes/:na]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146) ~[na:1.6.0_27]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.6.0_27]
+	at java.lang.Thread.run(Thread.java:679) [na:1.6.0_27]
+2013-09-11 14:38:36,270 DEBUG [qtp20436132-14 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:38:39,531 DEBUG [qtp20436132-15 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:51141
+2013-09-11 14:38:39,534 WARN [qtp20436132-15 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:102] test_request threw A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+com.modifiedrestfb.exception.FacebookNetworkException: A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequestAndProcessResponse(DefaultFacebookClient.java:741) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:708) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:673) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.fetchObject(DefaultFacebookClient.java:257) ~[classes/:na]
+	at com.trivayh.facebook.FacebookUtil.getFacebookMeRest(FacebookUtil.java:31) ~[classes/:na]
+	at com.trivayh.server.TestRequest.execute(TestRequest.java:41) ~[classes/:na]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146) ~[na:1.6.0_27]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.6.0_27]
+	at java.lang.Thread.run(Thread.java:679) [na:1.6.0_27]
+2013-09-11 14:38:39,535 DEBUG [qtp20436132-15 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:38:40,687 DEBUG [qtp20436132-11 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:51141
+2013-09-11 14:38:40,690 WARN [qtp20436132-11 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:102] test_request threw A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+com.modifiedrestfb.exception.FacebookNetworkException: A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequestAndProcessResponse(DefaultFacebookClient.java:741) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:708) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:673) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.fetchObject(DefaultFacebookClient.java:257) ~[classes/:na]
+	at com.trivayh.facebook.FacebookUtil.getFacebookMeRest(FacebookUtil.java:31) ~[classes/:na]
+	at com.trivayh.server.TestRequest.execute(TestRequest.java:41) ~[classes/:na]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146) ~[na:1.6.0_27]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.6.0_27]
+	at java.lang.Thread.run(Thread.java:679) [na:1.6.0_27]
+2013-09-11 14:38:40,691 DEBUG [qtp20436132-11 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:38:48,687 DEBUG [qtp20436132-11 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:51141
+2013-09-11 14:38:48,690 WARN [qtp20436132-11 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:102] test_request threw A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+com.modifiedrestfb.exception.FacebookNetworkException: A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequestAndProcessResponse(DefaultFacebookClient.java:741) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:708) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:673) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.fetchObject(DefaultFacebookClient.java:257) ~[classes/:na]
+	at com.trivayh.facebook.FacebookUtil.getFacebookMeRest(FacebookUtil.java:31) ~[classes/:na]
+	at com.trivayh.server.TestRequest.execute(TestRequest.java:41) ~[classes/:na]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146) ~[na:1.6.0_27]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.6.0_27]
+	at java.lang.Thread.run(Thread.java:679) [na:1.6.0_27]
+2013-09-11 14:38:48,691 DEBUG [qtp20436132-11 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:38:49,800 DEBUG [qtp20436132-16 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:51141
+2013-09-11 14:38:51,795 WARN [qtp20436132-16 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:102] test_request threw A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+com.modifiedrestfb.exception.FacebookNetworkException: A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequestAndProcessResponse(DefaultFacebookClient.java:741) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:708) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:673) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.fetchObject(DefaultFacebookClient.java:257) ~[classes/:na]
+	at com.trivayh.facebook.FacebookUtil.getFacebookMeRest(FacebookUtil.java:31) ~[classes/:na]
+	at com.trivayh.server.TestRequest.execute(TestRequest.java:41) ~[classes/:na]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146) ~[na:1.6.0_27]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.6.0_27]
+	at java.lang.Thread.run(Thread.java:679) [na:1.6.0_27]
+2013-09-11 14:38:51,796 DEBUG [qtp20436132-16 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:38:57,124 DEBUG [qtp20436132-15 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:51141
+2013-09-11 14:38:57,577 DEBUG [qtp20436132-15 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:38:57,615 DEBUG [qtp20436132-11 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:51141
+2013-09-11 14:38:57,618 WARN [qtp20436132-11 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:102] test_request threw A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+com.modifiedrestfb.exception.FacebookNetworkException: A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequestAndProcessResponse(DefaultFacebookClient.java:741) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:708) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:673) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.fetchObject(DefaultFacebookClient.java:257) ~[classes/:na]
+	at com.trivayh.facebook.FacebookUtil.getFacebookMeRest(FacebookUtil.java:31) ~[classes/:na]
+	at com.trivayh.server.TestRequest.execute(TestRequest.java:41) ~[classes/:na]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146) ~[na:1.6.0_27]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.6.0_27]
+	at java.lang.Thread.run(Thread.java:679) [na:1.6.0_27]
+2013-09-11 14:38:57,620 DEBUG [qtp20436132-11 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:39:24,061 DEBUG [qtp20436132-13 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:51141
+2013-09-11 14:39:24,331 DEBUG [qtp20436132-13 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:41:19,818 DEBUG [qtp20436132-12 Selector0] o.e.j.i.nio [SelectorManager.java:848] destroyEndPoint SCEP@19473142java.nio.channels.SocketChannel[closed][o=false d=false,io=1,w=true,rb=false,wb=false]
+2013-09-11 14:41:19,819 DEBUG [qtp20436132-12 Selector0] o.e.j.s.HttpConnection [HttpConnection.java:664] closed org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@425743@127.0.0.1:8080<->127.0.0.1:51141
+2013-09-11 14:49:29,444 DEBUG [main] o.e.j.u.log [Log.java:80] Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+2013-09-11 14:49:29,502 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + SelectChannelConnector@localhost:8080 STOPPED as connector
+2013-09-11 14:49:29,503 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STOPPED as handler
+2013-09-11 14:49:29,510 INFO [main] c.s.c.d.s.CustomCodeServer$ [CustomCodeServer.scala:54] Starting custom code dev server session 4c3f6f06-b1a0-4b24-8c00-9e3a612021fe on localhost:8080
+2013-09-11 14:49:29,512 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:49:29,512 INFO [main] o.e.j.s.Server [Server.java:252] jetty-7.5.4.v20111024
+2013-09-11 14:49:29,544 DEBUG [main] o.e.j.u.c.Container [Container.java:201] Container org.eclipse.jetty.server.Server@61373f + qtp27929635{8<=0<=0/254,-1}#STOPPED as threadpool
+2013-09-11 14:49:29,544 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STOPPED
+2013-09-11 14:49:29,545 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STARTING
+2013-09-11 14:49:29,545 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED com.stackmob.customcode.dev.server.CustomCodeHandler@23756#STARTED
+2013-09-11 14:49:29,545 DEBUG [main] o.e.j.s.h.AbstractHandler [AbstractHandler.java:52] starting org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:49:29,545 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting qtp27929635{8<=0<=0/254,-1}#STOPPED
+2013-09-11 14:49:29,549 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED qtp27929635{8<=7<=8/254,0}#STARTED
+2013-09-11 14:49:29,550 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting SelectChannelConnector@localhost:8080 STOPPED
+2013-09-11 14:49:29,561 INFO [main] o.e.j.s.AbstractConnector [AbstractConnector.java:320] Started SelectChannelConnector@localhost:8080 STARTING
+2013-09-11 14:49:29,561 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:174] starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@33788d#STOPPED
+2013-09-11 14:49:29,575 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@33788d#STARTED
+2013-09-11 14:49:29,576 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED SelectChannelConnector@localhost:8080 STARTED
+2013-09-11 14:49:29,575 DEBUG [qtp27929635-11 Selector0] o.e.j.i.nio [SelectorManager.java:272] Starting Thread[qtp27929635-11 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@bef361
+2013-09-11 14:49:29,576 DEBUG [main] o.e.j.u.c.AbstractLifeCycle [AbstractLifeCycle.java:167] STARTED org.eclipse.jetty.server.Server@61373f
+2013-09-11 14:49:35,947 DEBUG [qtp27929635-16 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:51445
+2013-09-11 14:49:36,250 WARN [qtp27929635-16 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:102] test_request threw A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+com.modifiedrestfb.exception.FacebookNetworkException: A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequestAndProcessResponse(DefaultFacebookClient.java:741) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:708) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:673) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.fetchObject(DefaultFacebookClient.java:257) ~[classes/:na]
+	at com.trivayh.facebook.FacebookUtil.getFacebookMeRest(FacebookUtil.java:31) ~[classes/:na]
+	at com.trivayh.server.TestRequest.execute(TestRequest.java:41) ~[classes/:na]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146) ~[na:1.6.0_27]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.6.0_27]
+	at java.lang.Thread.run(Thread.java:679) [na:1.6.0_27]
+2013-09-11 14:49:36,263 DEBUG [qtp27929635-16 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:49:38,707 DEBUG [qtp27929635-15 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:51445
+2013-09-11 14:49:38,710 WARN [qtp27929635-15 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:102] test_request threw A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+com.modifiedrestfb.exception.FacebookNetworkException: A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequestAndProcessResponse(DefaultFacebookClient.java:741) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:708) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:673) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.fetchObject(DefaultFacebookClient.java:257) ~[classes/:na]
+	at com.trivayh.facebook.FacebookUtil.getFacebookMeRest(FacebookUtil.java:31) ~[classes/:na]
+	at com.trivayh.server.TestRequest.execute(TestRequest.java:41) ~[classes/:na]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146) ~[na:1.6.0_27]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.6.0_27]
+	at java.lang.Thread.run(Thread.java:679) [na:1.6.0_27]
+2013-09-11 14:49:38,712 DEBUG [qtp27929635-15 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:49:40,893 DEBUG [qtp27929635-13 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:51445
+2013-09-11 14:49:40,896 WARN [qtp27929635-13 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:102] test_request threw A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+com.modifiedrestfb.exception.FacebookNetworkException: A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequestAndProcessResponse(DefaultFacebookClient.java:741) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:708) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:673) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.fetchObject(DefaultFacebookClient.java:257) ~[classes/:na]
+	at com.trivayh.facebook.FacebookUtil.getFacebookMeRest(FacebookUtil.java:31) ~[classes/:na]
+	at com.trivayh.server.TestRequest.execute(TestRequest.java:41) ~[classes/:na]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146) ~[na:1.6.0_27]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.6.0_27]
+	at java.lang.Thread.run(Thread.java:679) [na:1.6.0_27]
+2013-09-11 14:49:40,897 DEBUG [qtp27929635-13 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:49:42,150 DEBUG [qtp27929635-17 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:51445
+2013-09-11 14:49:42,153 WARN [qtp27929635-17 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:102] test_request threw A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+com.modifiedrestfb.exception.FacebookNetworkException: A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequestAndProcessResponse(DefaultFacebookClient.java:741) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:708) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:673) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.fetchObject(DefaultFacebookClient.java:257) ~[classes/:na]
+	at com.trivayh.facebook.FacebookUtil.getFacebookMeRest(FacebookUtil.java:31) ~[classes/:na]
+	at com.trivayh.server.TestRequest.execute(TestRequest.java:41) ~[classes/:na]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146) ~[na:1.6.0_27]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.6.0_27]
+	at java.lang.Thread.run(Thread.java:679) [na:1.6.0_27]
+2013-09-11 14:49:42,154 DEBUG [qtp27929635-17 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:49:43,966 DEBUG [qtp27929635-13 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:51445
+2013-09-11 14:49:43,969 WARN [qtp27929635-13 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:102] test_request threw A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+com.modifiedrestfb.exception.FacebookNetworkException: A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequestAndProcessResponse(DefaultFacebookClient.java:741) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:708) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:673) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.fetchObject(DefaultFacebookClient.java:257) ~[classes/:na]
+	at com.trivayh.facebook.FacebookUtil.getFacebookMeRest(FacebookUtil.java:31) ~[classes/:na]
+	at com.trivayh.server.TestRequest.execute(TestRequest.java:41) ~[classes/:na]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146) ~[na:1.6.0_27]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.6.0_27]
+	at java.lang.Thread.run(Thread.java:679) [na:1.6.0_27]
+2013-09-11 14:49:43,970 DEBUG [qtp27929635-13 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:49:50,298 DEBUG [qtp27929635-14 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:51445
+2013-09-11 14:49:52,265 WARN [qtp27929635-14 - /test_request] c.s.c.d.s.CustomCodeHandler [CustomCodeHandler.scala:102] test_request threw A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+com.modifiedrestfb.exception.FacebookNetworkException: A network error occurred while trying to communicate with Facebook: Facebook request failed (HTTP status code 0)
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequestAndProcessResponse(DefaultFacebookClient.java:741) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:708) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.makeRequest(DefaultFacebookClient.java:673) ~[classes/:na]
+	at com.modifiedrestfb.DefaultFacebookClient.fetchObject(DefaultFacebookClient.java:257) ~[classes/:na]
+	at com.trivayh.facebook.FacebookUtil.getFacebookMeRest(FacebookUtil.java:31) ~[classes/:na]
+	at com.trivayh.server.TestRequest.execute(TestRequest.java:41) ~[classes/:na]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at com.stackmob.customcode.dev.CustomCodeMethodExecutor$$anonfun$1.apply(CustomCodeMethodExecutor.scala:36) ~[stackmob-customcode-dev_2.10-0.1.7.jar:0.1.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.1.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146) ~[na:1.6.0_27]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.6.0_27]
+	at java.lang.Thread.run(Thread.java:679) [na:1.6.0_27]
+2013-09-11 14:49:52,265 DEBUG [qtp27929635-14 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:49:52,473 DEBUG [qtp27929635-12 - /test_request] o.e.j.s.Server [Server.java:344] REQUEST /test_request on org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:51445
+2013-09-11 14:49:53,232 DEBUG [qtp27929635-12 - /test_request] o.e.j.s.Server [Server.java:346] RESPONSE /test_request  200
+2013-09-11 14:51:48,561 DEBUG [qtp27929635-11 Selector0] o.e.j.i.nio [SelectorManager.java:848] destroyEndPoint SCEP@6419763java.nio.channels.SocketChannel[closed][o=false d=false,io=1,w=true,rb=false,wb=false]
+2013-09-11 14:51:48,562 DEBUG [qtp27929635-11 Selector0] o.e.j.s.HttpConnection [HttpConnection.java:664] closed org.eclipse.jetty.server.nio.SelectChannelConnector$SelectChannelHttpConnection@1522de2@127.0.0.1:8080<->127.0.0.1:51445

@@ -1,8 +1,6 @@
-package com.trivayh.server;
-
-
 import com.stackmob.core.jar.JarEntryObject;
 import com.stackmob.customcode.dev.server.CustomCodeServer;
+import com.trivayh.server.EntryPointExtender;
 
 public class LocalDevServer {
     public static void main(String[] args) {

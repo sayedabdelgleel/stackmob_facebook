@@ -20,6 +20,7 @@
             <groupId>com.stackmob</groupId>
             <artifactId>customcode</artifactId>
             <version>${customcode.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>commons-codec</groupId>
@@ -35,12 +36,7 @@
             <groupId>com.stackmob</groupId>
             <artifactId>stackmob-customcode-dev_2.10</artifactId>
             <version>${customcode.dev.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.restfb</groupId>
-            <artifactId>restfb</artifactId>
-            <version>1.6.12</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
@@ -70,7 +66,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.stackmob.example.EntryPointExtender</mainClass>
+                                    <mainClass>com.trivayh.server.EntryPointExtender</mainClass>
                                 </transformer>
                             </transformers>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
