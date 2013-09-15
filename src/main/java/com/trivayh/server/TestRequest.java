@@ -1,19 +1,16 @@
 package com.trivayh.server;
 
-import com.restfb.DefaultFacebookClient;
-import com.restfb.FacebookClient;
-import com.restfb.types.User;
+
 import com.stackmob.core.customcode.CustomCodeMethod;
 import com.stackmob.core.rest.ProcessedAPIRequest;
 import com.stackmob.core.rest.ResponseToProcess;
 import com.stackmob.sdkapi.SDKServiceProvider;
-import com.stackmob.sdkapi.http.Header;
-import com.stackmob.sdkapi.http.HttpService;
-import com.stackmob.sdkapi.http.request.GetRequest;
-import com.stackmob.sdkapi.http.response.HttpResponse;
-import com.trivayh.facebook.FacebookUtil;
 
-import java.lang.reflect.Array;
+import com.trivayh.facebook.FacebookUtil;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
 import java.net.HttpURLConnection;
 import java.util.*;
 
@@ -32,13 +29,25 @@ public class TestRequest implements CustomCodeMethod {
 
     @Override
     public List<String> getParams() {
-        return Arrays.asList();
+        return Arrays.asList("accessToken");
     }
 
     @Override
     public ResponseToProcess execute(ProcessedAPIRequest processedAPIRequest, SDKServiceProvider sdkServiceProvider) {
+
+        String accessToken = "";
+        JSONParser parser = new JSONParser();
+        try {
+            Object obj = parser.parse(processedAPIRequest.getBody());
+            JSONObject jsonObject = (JSONObject) obj;
+            accessToken = (String) jsonObject.get("accessToken");
+        }catch (ParseException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+
         Map<String, String> args = new HashMap<String, String>();
-        args.put("msg", FacebookUtil.getFacebookMeRest(sdkServiceProvider));
+        FacebookUtil facebook = new FacebookUtil(accessToken, sdkServiceProvider);
+        args.put("msg", facebook.getMe());
 
 
         return new ResponseToProcess(HttpURLConnection.HTTP_OK, args);
