@@ -20,16 +20,37 @@ import java.util.Set;
  */
 public class FacebookUtil {
 
+    private static final String FACEBOOk_GRAPH_URL = "https://graph.facebook.com/";
+    private SDKServiceProvider serviceProvider;
+    private String accessToken;
 
-    public static String getFacebookMeRest(SDKServiceProvider sdkServiceProvider){
-
-        return null;
+    public FacebookUtil (String token, SDKServiceProvider sdkServiceProvider)
+    {
+         serviceProvider = sdkServiceProvider;
+         accessToken = "?access_token=" + token;
     }
 
-    public static String getFacebookMe(SDKServiceProvider sdkServiceProvider){
-        String url = "https://graph.facebook.com/me?access_token=CAADJZA5LFsBMBACNbStuZAdyAZCjaHylp89gjo9iZBzm28hMDGmHb157ZCYUA8jZBhiQnDJgWkLZCOmtp2xFGlZCf2KFE1vqEZBzXU4KO0ZCtu2LvrQvad0cJI5q9jIUqurgry00x5nnyX1wJhBDX7uXJUAXJPmQZBjZBeQeshyYWZBIpuvZA6svPEJVmuzKsOYRRXdIsZD";
 
-        // Formulate request headers
+    public String getMe(){
+        String url = FACEBOOk_GRAPH_URL+ "/me" +accessToken;
+        HttpResponse resp = makeGETRequest(url);
+        return resp.getBody();
+    }
+
+    public String getFriends(){
+        String url = FACEBOOk_GRAPH_URL+ "/me/friends" +accessToken;
+        HttpResponse resp = makeGETRequest(url);
+        return resp.getBody();
+    }
+
+    public String getUser(String id){
+        String url = FACEBOOk_GRAPH_URL+ "/"+id+accessToken;
+        HttpResponse resp = makeGETRequest(url);
+        return resp.getBody();
+    }
+
+    public HttpResponse makeGETRequest(String url){
+
         Header accept = new Header("Accept-Charset", "utf-8");
         Header content = new Header("Content-Type", "application/x-www-form-urlencoded");
 
@@ -37,27 +58,15 @@ public class FacebookUtil {
         set.add(accept);
         set.add(content);
 
-
         try {
-            System.out.println("kokooooooooooooooooooooo111111");
-            HttpService http = sdkServiceProvider.getHttpService();
-
-      /* In this Example we are going to be making a GET request
-       * but PUT/POST/DELETE requests are also possible.
-       */
+            HttpService http = serviceProvider.getHttpService();
             GetRequest req = new GetRequest(url,set);
             HttpResponse resp = http.get(req);
-
-            System.out.println("kokooooooooooooooooooooo");
             System.out.println(resp.getBody());
-            return resp.getBody();
+            return resp;
         } catch (Exception e) {
-            System.out.println("eeeeeeeeeeeee");
-            System.out.println(e.getMessage());
-            return "Exception.";
+            return null;
         }
-
-
 
     }
 }
