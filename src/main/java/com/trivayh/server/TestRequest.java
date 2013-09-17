@@ -6,6 +6,10 @@ import com.stackmob.core.rest.ProcessedAPIRequest;
 import com.stackmob.core.rest.ResponseToProcess;
 import com.stackmob.sdkapi.SDKServiceProvider;
 
+import com.stackmob.sdkapi.http.Header;
+import com.stackmob.sdkapi.http.HttpService;
+import com.stackmob.sdkapi.http.request.GetRequest;
+import com.stackmob.sdkapi.http.response.HttpResponse;
 import com.trivayh.facebook.FacebookUtil;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -48,7 +52,6 @@ public class TestRequest implements CustomCodeMethod {
         Map<String, String> args = new HashMap<String, String>();
         FacebookUtil facebook = new FacebookUtil(accessToken, sdkServiceProvider);
         args.put("msg", facebook.getMe());
-
 
         return new ResponseToProcess(HttpURLConnection.HTTP_OK, args);
 
