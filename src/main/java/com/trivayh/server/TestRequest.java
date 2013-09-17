@@ -31,6 +31,7 @@ public class TestRequest implements CustomCodeMethod {
         return "test_request";  //To change body of implemented methods use File | Settings | File Templates.
     }
 
+
     @Override
     public List<String> getParams() {
         return Arrays.asList("accessToken");
