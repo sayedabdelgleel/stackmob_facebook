@@ -63,8 +63,11 @@ public class FacebookUtil {
             GetRequest req = new GetRequest(url,set);
             HttpResponse resp = http.get(req);
             System.out.println(resp.getBody());
+            System.out.println("heeeeeeeeeeeh");
             return resp;
+
         } catch (Exception e) {
+            System.out.println("Exception: " + e.getMessage());
             return null;
         }
 
