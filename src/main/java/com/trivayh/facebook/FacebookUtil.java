@@ -7,8 +7,14 @@ import com.stackmob.sdkapi.http.Header;
 import com.stackmob.sdkapi.http.HttpService;
 import com.stackmob.sdkapi.http.request.GetRequest;
 import com.stackmob.sdkapi.http.response.HttpResponse;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -24,32 +30,31 @@ public class FacebookUtil {
     private SDKServiceProvider serviceProvider;
     private String accessToken;
 
-    public FacebookUtil (String token, SDKServiceProvider sdkServiceProvider)
-    {
-         serviceProvider = sdkServiceProvider;
-         accessToken = "?access_token=" + token;
+    public FacebookUtil(String token, SDKServiceProvider sdkServiceProvider) {
+        serviceProvider = sdkServiceProvider;
+        accessToken = "?access_token=" + token;
     }
 
 
-    public String getMe(){
-        String url = FACEBOOk_GRAPH_URL+ "/me" +accessToken;
+    public User getMe() {
+        String url = FACEBOOk_GRAPH_URL + "/me" + accessToken;
         HttpResponse resp = makeGETRequest(url);
-        return resp.getBody();
+        return createUser(resp.getBody());
     }
 
-    public String getFriends(){
-        String url = FACEBOOk_GRAPH_URL+ "/me/friends" +accessToken;
+    public List<FacebookUser> getFriends() {
+        String url = FACEBOOk_GRAPH_URL + "/me/friends" + accessToken;
         HttpResponse resp = makeGETRequest(url);
-        return resp.getBody();
+        return createFriends(resp.getBody());
     }
 
-    public String getUser(String id){
-        String url = FACEBOOk_GRAPH_URL+ "/"+id+accessToken;
+    public User getUser(String id) {
+        String url = FACEBOOk_GRAPH_URL + "/" + id + accessToken;
         HttpResponse resp = makeGETRequest(url);
-        return resp.getBody();
+        return createUser(resp.getBody());
     }
 
-    public HttpResponse makeGETRequest(String url){
+    public HttpResponse makeGETRequest(String url) {
 
         Header accept = new Header("Accept-Charset", "utf-8");
         Header content = new Header("Content-Type", "application/x-www-form-urlencoded");
@@ -60,10 +65,9 @@ public class FacebookUtil {
 
         try {
             HttpService http = serviceProvider.getHttpService();
-            GetRequest req = new GetRequest(url,set);
+            GetRequest req = new GetRequest(url, set);
             HttpResponse resp = http.get(req);
             System.out.println(resp.getBody());
-            System.out.println("heeeeeeeeeeeh");
             return resp;
 
         } catch (Exception e) {
@@ -71,5 +75,51 @@ public class FacebookUtil {
             return null;
         }
 
+    }
+
+    public User createUser(String body) {
+
+        User user = new User();
+        JSONObject userObject = parseJSONObject(body);
+
+        user.setId((String) userObject.get("id"));
+        user.setName((String) userObject.get("name"));
+        user.setUserName((String) userObject.get("username"));
+        user.setFirstName((String) userObject.get("first_name"));
+        user.setLastName((String) userObject.get("last_name"));
+        user.setBirthDay((String) userObject.get("birthday"));
+
+        JSONObject hometownObject = (JSONObject) userObject.get("hometown");
+        user.setHomeTown((String) hometownObject.get("name"));
+
+        JSONObject currentCityObject = (JSONObject) userObject.get("location");
+        user.setCurrentCity((String) currentCityObject.get("name"));
+
+        return user;
+    }
+
+    public List <FacebookUser> createFriends(String body){
+        List<FacebookUser> friends = new ArrayList<FacebookUser>();
+        JSONObject friendsObject = parseJSONObject(body);
+        JSONArray friendsList = (JSONArray) friendsObject.get("data");
+        for( int i=0; i<friendsList.size(); i++){
+            JSONObject friendObject = (JSONObject) friendsList.get(i);
+            FacebookUser friend = new FacebookUser();
+            friend.setId((String) friendObject.get("id"));
+        }
+        return  friends;
+    }
+
+    public JSONObject parseJSONObject(String body) {
+        JSONParser parser = new JSONParser();
+        JSONObject obj = null;
+        try {
+
+            obj = (JSONObject) parser.parse(body);
+
+        } catch (ParseException pe) {
+
+        }
+        return obj;
     }
 }

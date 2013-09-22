@@ -2,24 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70753478-6bcb-4709-b22f-4c0d62725f9a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/trivayh/facebook/User.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/trivayh/server/TestRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/trivayh/server/setFriends.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trivayh/server/EntryPointExtender.java" afterPath="$PROJECT_DIR$/src/main/java/com/trivayh/server/EntryPointExtender.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trivayh/facebook/FacebookUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/trivayh/facebook/FacebookUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/LocalDevServer.java" afterPath="$PROJECT_DIR$/src/test/java/LocalDevServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StackMob_Facebook.iml" afterPath="$PROJECT_DIR$/StackMob_Facebook.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trivayh/server/TestRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/trivayh/server/TestRequest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stackmob_customcode.log" afterPath="$PROJECT_DIR$/stackmob_customcode.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StackMob_Facebook.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="70753478-6bcb-4709-b22f-4c0d62725f9a" time="1378898097459" ignored="false" />
-    <file path="/LocalDevServer.java" changelist="70753478-6bcb-4709-b22f-4c0d62725f9a" time="1378714959171" ignored="false" />
-    <file path="/EntryPointExtender.java" changelist="70753478-6bcb-4709-b22f-4c0d62725f9a" time="1378718961900" ignored="false" />
-    <file path="/TestRequest.java" changelist="70753478-6bcb-4709-b22f-4c0d62725f9a" time="1379513840772" ignored="false" />
-    <file path="/FacebookUtil.java" changelist="70753478-6bcb-4709-b22f-4c0d62725f9a" time="1379512946676" ignored="false" />
+    <file path="/LocalDevServer.java" changelist="70753478-6bcb-4709-b22f-4c0d62725f9a" time="1379595477391" ignored="false" />
+    <file path="/EntryPointExtender.java" changelist="70753478-6bcb-4709-b22f-4c0d62725f9a" time="1379581108848" ignored="false" />
+    <file path="/TestRequest.java" changelist="70753478-6bcb-4709-b22f-4c0d62725f9a" time="1379577148277" ignored="false" />
+    <file path="/FacebookUtil.java" changelist="70753478-6bcb-4709-b22f-4c0d62725f9a" time="1379865080879" ignored="false" />
     <file path="/fragment.java" changelist="70753478-6bcb-4709-b22f-4c0d62725f9a" time="1378897057586" ignored="false" />
     <file path="/DefaultWebRequestor.java" changelist="70753478-6bcb-4709-b22f-4c0d62725f9a" time="1378902711641" ignored="false" />
     <file path="/a.dummy" changelist="70753478-6bcb-4709-b22f-4c0d62725f9a" time="1379234051912" ignored="false" />
-    <file path="/Dummy.txt" changelist="70753478-6bcb-4709-b22f-4c0d62725f9a" time="1379505716654" ignored="false" />
+    <file path="/Dummy.txt" changelist="70753478-6bcb-4709-b22f-4c0d62725f9a" time="1379861597946" ignored="false" />
+    <file path="/setFriends.java" changelist="70753478-6bcb-4709-b22f-4c0d62725f9a" time="1379845775273" ignored="false" />
+    <file path="/User.java" changelist="70753478-6bcb-4709-b22f-4c0d62725f9a" time="1379863888815" ignored="false" />
+    <file path="/Friend.java" changelist="70753478-6bcb-4709-b22f-4c0d62725f9a" time="1379864616414" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +37,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -70,7 +74,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -81,14 +84,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestRequest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/server/TestRequest.java">
+      <file leaf-file-name="setFriends.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/server/setFriends.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="29" selection-start="394" selection-end="394" vertical-scroll-proportion="0.37593985">
+            <state line="54" column="31" selection-start="1756" selection-end="1756" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/facebook/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="430" selection-end="430" vertical-scroll-proportion="0.44117647">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FacebookUtil.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/facebook/FacebookUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="44" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#1393#1409#0" expanded="true" />
-                <element signature="e#2052#2069#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#3331#3345#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FacebookUser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/facebook/FacebookUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="5" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntryPointExtender.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/server/EntryPointExtender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="56" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocalDevServer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/LocalDevServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="128" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,10 +159,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/EntryPointExtender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LocalDevServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/TestRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trivayh/server/EntryPointExtender.java" />
         <option value="$PROJECT_DIR$/src/main/java/FacebookUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trivayh/server/LocalDevServer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -122,9 +167,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/modifiedrestfb/WebRequestor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/modifiedrestfb/DefaultWebRequestor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/modifiedrestfb/DefaultFacebookClient.java" />
-        <option value="$PROJECT_DIR$/src/test/java/LocalDevServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trivayh/facebook/FacebookUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trivayh/server/TestRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trivayh/server/EntryPointExtender.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LocalDevServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trivayh/server/setFriends.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trivayh/facebook/FacebookUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trivayh/facebook/Friend.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trivayh/facebook/FacebookUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trivayh/facebook/User.java" />
       </list>
     </option>
   </component>
@@ -202,8 +252,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -306,17 +354,19 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="dynamic.classpath" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RunManager" selected="Application.LocalDevServer">
     <configuration default="false" name="StackMob_Facebook [install]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
@@ -429,19 +479,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -467,6 +504,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -561,7 +611,11 @@
       <created>1379405742238</created>
       <updated>1379405742238</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="get friends from access token and add them to the database">
+      <created>1379514400494</created>
+      <updated>1379514400494</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -586,26 +640,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="24" width="969" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39878234" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34290272" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24978614" sideWeight="0.674277" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1332611" sideWeight="0.6570973" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09317443" sideWeight="0.6688" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21451788" sideWeight="0.7008" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2992" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.283857" sideWeight="0.6688" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33118972" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -652,7 +706,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add getMe, getFriends, getUser" />
+    <option name="LAST_COMMIT_MESSAGE" value="get friends from access token and add them to the database" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -667,6 +721,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Add getMe, getFriends, getUser" />
+    <MESSAGE value="get friends from access token and add them to the database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -679,48 +734,17 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/facebook/FacebookUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="20" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/server/TestRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="36" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#1393#1409#0" expanded="true" />
-            <element signature="e#2052#2069#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3331#3345#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/server/EntryPointExtender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="48" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/LocalDevServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/facebook/FacebookUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="20" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/server/TestRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/server/setFriends.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="36" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1393#1409#0" expanded="true" />
-            <element signature="e#2052#2069#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -755,41 +779,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/server/EntryPointExtender.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/parser/JSONParser.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="48" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
+        <state line="51" column="0" selection-start="2797" selection-end="2797" vertical-scroll-proportion="-10.96" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/stackmob/stackmob-customcode-dev_2.10/0.1.7/stackmob-customcode-dev_2.10-0.1.7.jar!/com/stackmob/customcode/dev/server/sdk/data/TooManyDataServiceCallsException$.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="87" selection-start="425" selection-end="457" vertical-scroll-proportion="-5.4" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/LocalDevServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="128" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/parser/JSONParser.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/server/EntryPointExtender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="2797" selection-end="2797" vertical-scroll-proportion="-10.96">
+        <state line="16" column="56" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/server/setFriends.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="31" selection-start="1756" selection-end="1756" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/facebook/FacebookUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="5" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/facebook/FacebookUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="46" selection-start="2028" selection-end="2028" vertical-scroll-proportion="0.7111651">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/LocalDevServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="82" selection-start="373" selection-end="373" vertical-scroll-proportion="0.22556391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/server/TestRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="29" selection-start="394" selection-end="394" vertical-scroll-proportion="0.37593985">
+        <state line="47" column="44" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#1393#1409#0" expanded="true" />
-            <element signature="e#2052#2069#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3331#3345#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trivayh/facebook/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="430" selection-end="430" vertical-scroll-proportion="0.44117647">
+          <folding />
         </state>
       </provider>
     </entry>

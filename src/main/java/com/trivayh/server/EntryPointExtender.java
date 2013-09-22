@@ -17,7 +17,7 @@ public class EntryPointExtender extends JarEntryObject {
     @Override
     public List<CustomCodeMethod> methods() {
         List<CustomCodeMethod> list = new ArrayList<CustomCodeMethod>();  //To change body of implemented methods use File | Settings | File Templates.
-        list.add(new TestRequest());
+        list.add(new setFriends());
         return list;
     }
 }
